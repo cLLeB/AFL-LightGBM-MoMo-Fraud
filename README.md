@@ -1,5 +1,7 @@
 # AFL-LightGBM: Adaptive Focal-Loss LightGBM for Mobile Money Fraud Detection in Ghana
 
+[![DOI](https://zenodo.org/badge/1279587033.svg)](https://doi.org/10.5281/zenodo.20838286)
+
 An engineered LightGBM variant that **fabricates an adaptive focal loss objective**
 (γ = log(N_neg / N_pos) / 2) inside LightGBM's custom-gradient API to detect fraud in
 Ghanaian mobile money transaction data (<0.5% fraud prevalence), with SHAP-based
@@ -35,7 +37,7 @@ def afl_focal_obj(y_pred, dtrain, gamma):
 - **RQ3** — Which transaction features most strongly predict fraud (SHAP), and how do they differ between PaySim and Ghanaian field data?
 
 ## Data
-- **Public baseline:** PaySim synthetic mobile money dataset (~6.3M rows, 0.13% fraud)
+- **Public baseline:** PaySim synthetic mobile money dataset (~6.3M rows, 0.13% fraud)  
   https://www.kaggle.com/datasets/ealaxi/paysim1
 - **Primary field data:** De-identified Ghanaian MNO transaction logs (pending CHRPE ethics approval; not redistributed here)
 
@@ -73,9 +75,9 @@ Field data collection is covered by a KNUST CHRPE application submitted 25 June 
 Approval expected 16 July 2026. No raw participant data is stored in this repository.
 
 ## Citation
-Zenodo DOI will be minted on first GitHub Release (after experiments complete). Cite as:
+Cite this repository as:
 > Boateng, C. K. K. (2026). AFL-LightGBM: Adaptive focal-loss LightGBM for mobile money
-> fraud detection in Ghana [Code]. GitHub. https://github.com/cLLeB/AFL-LightGBM-MoMo-Fraud
+> fraud detection in Ghana [Code]. Zenodo. https://doi.org/10.5281/zenodo.20838286
 
 ## License
 MIT
